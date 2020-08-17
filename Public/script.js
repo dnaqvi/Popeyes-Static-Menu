@@ -11,6 +11,7 @@ const handleClick = async event => {
   const tracking = eventPath.find(
     item => item.dataset.trackingid !== undefined
   );
+  console.log(tracking);
   const eventTarget = event.target.outerHTML;
   const timeUserClicked = Math.round(event.timeStamp);
   const userId = localStorage.getItem('userId');
